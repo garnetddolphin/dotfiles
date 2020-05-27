@@ -1,0 +1,36 @@
+#alias
+alias ls='clear && ls -FGa'
+alias ll='clear && ls -FGal'
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias vi='vim'
+alias pp='pwd | sed "s/^\(.*\)$/''\1''/" | tr -d '\''\n'\'' | pbcopy'
+alias pass='sh pass.sh'
+alias cakenewapp='composer create-project --prefer-dist cakephp/app'
+alias pwdc='pwd | tr -d "\n" | pbcopy'
+alias tree='tree -N -a'
+alias delds='find . -name ".DS_Store" | xargs rm'
+
+#global alias
+alias -g C='pbcopy'
+alias -g G='grep --color=auto'
+alias -g H='head'
+alias -g T='tail'
+alias -g L='less -R'
+
+#git-alias
+alias g='git'
+alias ga='git add'
+alias gd='git diff'
+alias gdh='git diff HEAD^'
+alias gdc='git diff --cached'
+alias gdno='git diff --name-only'
+alias gst='git status -sb;git stash list'
+alias gcm='git commit -m'
+alias gpl='git pull'
+alias gph='git push'
+alias gch='git checkout'
+alias gchd='git checkout develop'
+alias gb='git branch -a'
+alias glg="git log --date=format-local:'%Y/%m/%d %H:%M:%S' | head"
+alias glgg="git log --date=format-local:'%Y/%m/%d %H:%M:%S'"
+alias -g NO='--name-only'
