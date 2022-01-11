@@ -9,6 +9,7 @@ alias cakenewapp='composer create-project --prefer-dist cakephp/app'
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias tree='tree -N -a'
 alias delds='find . -name ".DS_Store" | xargs rm'
+alias pps='open -a /Applications/PhpStorm.app/Contents/MacOS/phpstorm'
 
 #global alias
 alias -g C='pbcopy'
