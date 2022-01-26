@@ -97,10 +97,6 @@ select-word-style default
 zstyle ':zle:*' word-chars " _-./;@"
 zstyle ':zle:*' word-style unspecified
 
-#auto_cd
-setopt AUTO_CD
-cdpath=(.. ~ /Applications/XAMPP/htdocs/)
-
 # Ctrl+Dでzshを終了しない
 setopt ignore_eof
 
