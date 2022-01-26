@@ -1,4 +1,3 @@
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export LSCOLORS=cxfxcxdxbxegedabagacad
 # export RBENV_ROOT=/usr/local/var/rbenv
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
