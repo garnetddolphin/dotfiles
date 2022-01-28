@@ -24,11 +24,11 @@ autoload -Uz vcs_info
 # PROMPT変数内で変数参照
 setopt prompt_subst
 #gitブランチの表示
+zstyle ':vcs_info:*' formats "%F{blue}%c%u(%b)%f" #通常
+zstyle ':vcs_info:*' actionformats '[%b|%a]' #rebase 途中,merge コンフリクト等 formats 外の表示
 zstyle ':vcs_info:git:*' check-for-changes true #formats 設定項目で %c,%u が使用可
 zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!" #commit されていないファイルがある
 zstyle ':vcs_info:git:*' unstagedstr "%F{red}+" #add されていないファイルがある
-zstyle ':vcs_info:*' formats "%F{blue}%c%u(%b)%f" #通常
-zstyle ':vcs_info:*' actionformats '[%b|%a]' #rebase 途中,merge コンフリクト等 formats 外の表示
 precmd () { vcs_info }
 function precmd_function(){
   GITUSERNAME=$(git config user.name)
