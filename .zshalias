@@ -21,6 +21,7 @@ alias -g L='less -R'
 #git-alias
 alias g='git'
 alias ga='git add'
+alias gan='git add -N'
 alias gd='git diff'
 alias gdh='git diff HEAD^'
 alias gdc='git diff --cached'
@@ -32,6 +33,6 @@ alias gph='git push'
 alias gch='git checkout'
 alias gchd='git checkout develop'
 alias gb='git branch -a'
-alias glg="git log --date=format-local:'%Y/%m/%d %H:%M:%S' | head"
-alias glgg="git log --date=format-local:'%Y/%m/%d %H:%M:%S'"
+alias glg="git log --date=format-local:'%Y/%m/%d %H:%M:%S'"
+alias glgg="git log --date=format-local:'%Y/%m/%d %H:%M:%S' --oneline"
 alias -g NO='--name-only'
