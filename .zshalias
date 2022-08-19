@@ -2,6 +2,7 @@
 alias ls='clear && ls -FGa'
 alias ll='clear && ls -FGal'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias mi='open -a /Applications/mi.app'
 alias vi='vim'
 alias pp='pwd | sed "s/^\(.*\)$/''\1''/" | tr -d '\''\n'\'' | pbcopy'
 alias pass='sh pass.sh'
